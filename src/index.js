@@ -289,7 +289,8 @@ async function loadEnv(path) {
     contents = await readFile(path, "utf8");
   } catch (error) {
     if (error.code === "ENOENT") {
-      throw new Error("Не найден файл .env. Скопируйте .env.example в .env и заполните настройки.");
+      if (process.env.VK_TOKEN && process.env.VK_GROUP_ID && process.env.ADMIN_IDS) return;
+      throw new Error("Не найден файл .env и не заданы переменные окружения VK_TOKEN, VK_GROUP_ID, ADMIN_IDS.");
     }
     throw error;
   }
