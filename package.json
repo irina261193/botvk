@@ -1,0 +1,16 @@
+{
+  "name": "vk-mailing-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VK community mailing bot with explicit subscriptions",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js",
+    "diagnose": "node src/diagnose.js",
+    "test:pdf": "node src/test-pdf.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

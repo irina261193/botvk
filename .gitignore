@@ -1,0 +1,7 @@
+.env
+data/
+node_modules/
+npm-debug.log*
+bot.stdout.log
+bot.stderr.log
+tmp/pdfs/
