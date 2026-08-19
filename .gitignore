@@ -5,3 +5,8 @@ npm-debug.log*
 bot.stdout.log
 bot.stderr.log
 tmp/pdfs/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
